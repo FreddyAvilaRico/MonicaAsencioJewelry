@@ -1,0 +1,8 @@
+development:
+  password: shptka_42d3df5b9b935baa6153b5bc32628964
+  theme_id: "128816218274"
+  store: bonita-boutique-pop-up.myshopify.com
+  ignore_files:
+    - config/settings_data.json
+    - config/settings_schema.json
+    - assets/settings_data.json

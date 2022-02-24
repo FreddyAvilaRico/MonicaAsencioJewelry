@@ -1,0 +1,154 @@
+/* ANNOUNCEMENT BAR */
+
+.container-maj {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    align-items: baseline;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.announcement-bar__message.h5 {
+    color: #fff;
+    font-size: calc(var(--font-heading-scale) * 1rem);
+    padding-left: 10%;
+}
+
+.announcement-bar .social-grid {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0;
+        align-self: center;
+        text-align: right;
+}
+
+.announcement-bar .social__item {
+    display: inline;
+    margin-left: 10px;
+}
+
+.announcement-bar .social__link {
+   text-decoration: none;
+}
+
+.announcement-bar .social__link svg {
+    color: #fff !important;
+    font-size: 14px;
+    max-width: 14px;
+}
+
+
+@media (max-width: 1500px) {
+    .container-maj {
+       padding-left: 15px;
+       padding-right: 15px;
+    }
+
+    .announcement-bar__message.h5 {
+        padding-left: 2rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .container-maj {
+       padding-left: 15px;
+       padding-right: 15px;
+       grid-template-columns: 100%;
+    }
+    .social-grid {
+        display: none !important;
+    }
+}
+
+
+
+
+
+/* HEADER */
+
+header.header.header--middle-left.page-width.header--has-menu {
+    padding: 0;
+}
+
+.header--middle-left {
+    grid-template-columns: 15% 70% 15%;
+    column-gap: 0;
+}
+ 
+.header__active-menu-item {
+    transition: text-decoration-thickness var(--duration-short) ease;
+    color: #FFA9B6;
+    text-decoration: none;
+}
+
+.header--middle-left .header__inline-menu {
+    text-align: center;
+}
+
+.header__menu-item:hover {
+    color: #FFA9B6;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 1500px) {
+    header.header.header--middle-left.page-width.header--has-menu {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .header__heading, .header__heading-link {
+        text-align: center;
+        max-width: 160px;
+        padding: 6px 0;
+    }
+}
+
+
+
+/* HERO BANNER */
+
+#Slider-template--15397542396066__164556206853e3b6e7 h2.banner__heading.h1 {
+    color: #000;
+    font-weight: 600;
+}
+
+#Slider-template--15397542396066__164556206853e3b6e7 .banner__text {
+    color: #000;
+}
+
+#Slider-template--15397542396066__164556206853e3b6e7 .banner__buttons a {
+    background-color: #000;
+    color: #fff;
+    opacity: 1;
+}
+
+
+@media (max-width: 748px) {
+    .banner--mobile-bottom .slideshow__text.banner__box {
+        background: #ffe5eb;
+        background-image: url('https://cdn.shopify.com/s/files/1/0496/9817/7186/files/monica-pink-bg.jpg?v=1645575579') !important; 
+        background-size: cover;
+        background-position: right;
+    }
+
+    #Slider-template--15397542396066__164556206853e3b6e7::before, #Slider-template--15397542396066__164556206853e3b6e7 .media::before, #Slider-template--15397542396066__164556206853e3b6e7:not(.banner--mobile-bottom) .banner__content::before {
+        padding-bottom: 45.52% !important;
+        content: '';
+        display: block;
+    }
+
+    .slideshow__media.banner__media.media img {
+        content: url('https://cdn.shopify.com/s/files/1/0496/9817/7186/files/monica-mb.jpg?v=1645575579') !important;
+        
+    }
+}
