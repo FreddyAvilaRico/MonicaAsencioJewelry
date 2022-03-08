@@ -1,0 +1,32 @@
+#MA-CollectionFeatured {
+    background-color: #fff;
+}
+
+#MA-CollectionFeatured .title {
+    font-size: 35px;
+    color: #020203;
+}
+
+#MA-CollectionFeatured .line-collectionfeatured {
+        margin: 15px 0 38px !important;
+}
+
+#MA-CollectionFeatured .card__media {
+    border-radius: 0;
+    border: 1px solid #fbe8eb;
+}
+
+#MA-CollectionFeatured .card__heading {
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+}
+
+#MA-CollectionFeatured .card-information {
+    text-align: left;
+}
+
+.starts-reviews-custom {
+    display: block;
+    color: #FFA9B6;
+}

@@ -1,0 +1,37 @@
+/* HERO BANNER */
+
+#MA-SlidesBanner h2.banner__heading.h1 {
+    color: #000;
+    font-weight: 600;
+}
+
+#MA-SlidesBanner .banner__text {
+    color: #000;
+}
+
+#MA-SlidesBanner .banner__buttons a {
+    background-color: #000;
+    color: #fff;
+    opacity: 1;
+}
+
+
+@media (max-width: 748px) {
+    .banner--mobile-bottom .slideshow__text.banner__box {
+        background: #ffe5eb;
+        background-image: url('https://cdn.shopify.com/s/files/1/0496/9817/7186/files/monica-pink-bg.jpg?v=1645575579') !important; 
+        background-size: cover;
+        background-position: right;
+    }
+
+    #MA-SlidesBanner::before, #MA-SlidesBanner .media::before, #MA-SlidesBanner:not(.banner--mobile-bottom) .banner__content::before {
+        padding-bottom: 45.52% !important;
+        content: '';
+        display: block;
+    }
+
+    .slideshow__media.banner__media.media img {
+        content: url('https://cdn.shopify.com/s/files/1/0496/9817/7186/files/monica-mb.jpg?v=1645575579') !important;
+        
+    }
+}

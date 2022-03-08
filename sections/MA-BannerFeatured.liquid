@@ -1,0 +1,76 @@
+{{ 'MA-BannerFeatured.css' | asset_url | stylesheet_tag }}
+
+{% for block in section.blocks %}
+<div id="BannerFeatured" style="background-image: url('{{ block.settings.BannerFeature_BG | img_url: 'master' }}');">
+    <div class="grip-box-banners" >
+        <div class="grid-child-0">
+            <p class="title-grip"><span> {{block.settings.BannerFeature_title}} </span></p>
+            <p class="description">{{block.settings.BannerFeature_description}}</p>
+            <p class="center-mb"><a href="{{block.settings.BannerFeature_url}}" class="button button--primary">Shop Now</a></p>
+        </div>
+    </div>
+</div>
+
+ 
+
+
+
+
+{% endfor %}
+
+ 
+
+
+{% schema %}
+  {
+    "name": "MA: BannerFeatured",
+    "settings": [
+		{
+		  "type": "header",
+          "content": "MA: BannerFeatured"
+        }
+	],
+	"blocks":[
+    {
+        "type": "image_content",
+        "name": "Image Content",
+        "settings": [
+        {
+            "type": "image_picker",
+            "id": "BannerFeature_BG",
+            "label": "Background"
+          },
+          {
+            "type": "url",
+            "id": "iBannerFeature_url",
+            "label": "Big Image URL"
+          },
+          {
+            "type": "text",
+            "id": "BannerFeature_title",
+            "label": "Title Big Image",
+            "default": "Title Here"
+          },
+          {
+            "type": "text",
+            "id": "BannerFeature_description",
+            "label": "Description",
+            "default": "Description Here"
+          }
+        ]
+     }
+	],
+	"presets": [
+		{
+		  "name": "MA: BannerFeatured",
+		  "category": "others",
+		  "blocks":[
+				 
+			]
+		}
+	]
+  }
+{% endschema %}
+
+
+

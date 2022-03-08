@@ -1,0 +1,184 @@
+{{ 'MA-CollectionMosaic.css' | asset_url | stylesheet_tag }}
+
+{% for block in section.blocks %}
+<div id="CollectionMosaic">
+    <div class="grip-box-banners">
+
+        <div class="grid-child-0">
+            <a href="{{block.settings.image_content_image_url-0}}" class="grip-0" style="background-image: url('{{ block.settings.image_content_image-0 | img_url: 'master' }}');">
+                    
+                <div class="flex">
+                    <span class="title-grip"> {{block.settings.title_grid-0}} </span>
+                    <div class="overlay"></div>
+                </div>
+               
+            </a>
+        </div>
+
+        <div class="grid-child-1">
+
+                <a href="{{block.settings.image_content_image_url-1}}" class="grip-1" style="background-image: url('{{ block.settings.image_content_image-1 | img_url: 'master' }}');">
+                    
+                    <div class="flex">
+                        <span class="title-grip"> {{block.settings.title_grid-1}} </span>
+                        <div class="overlay"></div>
+                    </div>
+                   
+                </a>
+            
+                <a href="{{block.settings.image_content_image_url-2}}" class="grip-2" style="background-image: url('{{ block.settings.image_content_image-2 | img_url: 'master' }}');">
+                    <div class="flex">
+                        <span class="title-grip"> {{block.settings.title_grid-2}} </span>
+                        <div class="overlay"></div> 
+                    </div>   
+                    
+                </a>
+
+                <a href="{{block.settings.image_content_image_url-3}}" class="grip-3" style="background-image: url('{{ block.settings.image_content_image-3 | img_url: 'master' }}');">
+                    <div class="flex">
+                        <span class="title-grip"> {{block.settings.title_grid-3}} </span>
+                        <div class="overlay"></div>
+                    </div>  
+                    
+                </a>
+
+                <a href="{{block.settings.image_content_image_url-4}}" class="grip-4" style="background-image: url('{{ block.settings.image_content_image-4 | img_url: 'master' }}');">
+                    <div class="flex">
+                        <span class="title-grip"> {{block.settings.title_grid-4}} </span>
+                        <div class="overlay"></div>
+                    </div>  
+                    
+                </a>
+
+            
+        </div>
+        
+    </div>
+</div>
+
+ 
+
+
+
+
+{% endfor %}
+
+ 
+
+
+{% schema %}
+  {
+    "name": "MA: CollectionMosaic",
+    "settings": [
+		{
+		  "type": "header",
+          "content": "MA: CollectionMosaic"
+        }
+	],
+	"blocks":[
+    {
+        "type": "image_content",
+        "name": "Image Content",
+        "settings": [
+        {
+            "type": "image_picker",
+            "id": "image_content_image-0",
+            "label": "Big Image"
+          },
+          {
+            "type": "url",
+            "id": "image_content_image_url-0",
+            "label": "Big Image URL"
+          },
+          {
+            "type": "text",
+            "id": "title_grid-0",
+            "label": "Title Big Image",
+            "default": "Title Here"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_content_image-1",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "image_content_image_url-1",
+            "label": "URL"
+          },
+          {
+            "type": "text",
+            "id": "title_grid-1",
+            "label": "Title Grid 1",
+            "default": "Title Here"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_content_image-2",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "image_content_image_url-2",
+            "label": "URL"
+          },
+          {
+            "type": "text",
+            "id": "title_grid-2",
+            "label": "Title Grid 2",
+            "default": "Title Here"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_content_image-3",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "image_content_image_url-3",
+            "label": "URL"
+          },
+          {
+            "type": "text",
+            "id": "title_grid-3",
+            "label": "Title Grid 3",
+            "default": "Title Here"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_content_image-4",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "image_content_image_url-4",
+            "label": "URL"
+          },
+          {
+            "type": "text",
+            "id": "title_grid-4",
+            "label": "Title Grid 4",
+            "default": "Title Here"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_content_image-5",
+            "label": "Image"
+          }
+        ]
+     }
+	],
+	"presets": [
+		{
+		  "name": "MA: CollectionMosaic",
+		  "category": "others",
+		  "blocks":[
+				 
+			]
+		}
+	]
+  }
+{% endschema %}
+
+
+

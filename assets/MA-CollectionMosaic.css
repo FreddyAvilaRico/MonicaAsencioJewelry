@@ -1,0 +1,183 @@
+#CollectionMosaic {
+  background-color: #fff;
+  padding: 50px 15px;
+}
+
+#CollectionMosaic .grip-box-banners {
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 20px;
+}
+
+#CollectionMosaic .grid-child-1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+#CollectionMosaic .grip-0 {
+  height: 700px;
+  max-height: 700px;
+  display: block;
+  background-position: center;
+  background-size: cover;
+}
+
+#CollectionMosaic .grid-child-0 a {
+  position: relative;
+}
+
+#CollectionMosaic .grid-child-1 a {
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+#CollectionMosaic .flex {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#CollectionMosaic .title-grip {
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-top: auto;
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+}
+
+#CollectionMosaic a .title-grip {
+  display: none;
+  z-index: 2;
+}
+
+#CollectionMosaic .grip-0:hover .title-grip {
+  display: block;
+}
+
+#CollectionMosaic .grip-1:hover .title-grip {
+  display: block;
+}
+
+#CollectionMosaic .grip-2:hover .title-grip {
+  display: block;
+}
+
+#CollectionMosaic .grip-3:hover .title-grip {
+  display: block;
+}
+
+#CollectionMosaic .grip-4:hover .title-grip {
+  display: block;
+}
+
+#CollectionMosaic .grip-0:hover .overlay {
+  display: block;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 169, 182, .8) 100%
+  );
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#CollectionMosaic .grip-1:hover .overlay {
+  display: block;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 169, 182, .8) 100%
+  );
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#CollectionMosaic .grip-2:hover .overlay {
+  display: block;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 169, 182, .8) 100%
+  );
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#CollectionMosaic .grip-3:hover .overlay {
+  display: block;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 169, 182, .8) 100%
+  );
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#CollectionMosaic .grip-4:hover .overlay {
+  display: block;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 169, 182, .8) 100%
+  );
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+
+@media (max-width: 1360px) { 
+  #CollectionMosaic .grid-child-1 {
+    grid-template-columns: auto auto;
+  }
+
+  #CollectionMosaic .grip-box-banners {
+    grid-template-columns: auto auto;
+}
+}
+
+@media (max-width: 748px) { 
+
+    #CollectionMosaic .grip-box-banners {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
+    }
+
+    #CollectionMosaic .grip-0 {
+      height: 270px;
+    }
+
+    #CollectionMosaic .grid-child-1 {
+      grid-template-columns: 48% 48%;
+    }
+
+    #CollectionMosaic a .title-grip {
+      display: block;
+      font-size: 14px;
+      color: #000;
+    }
+}

@@ -1,0 +1,67 @@
+#BannerFeatured {
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  display: flex;
+  margin: 0;
+  padding: 0 15px;
+}
+
+#BannerFeatured .grip-box-banners {
+    max-width: 1360px;
+    width: 100%;
+    margin: auto;
+}
+
+#BannerFeatured .grip-box-banners .grid-child-0 {
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+#BannerFeatured .grip-box-banners .title-grip {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1;
+    color: #000;
+}
+
+#BannerFeatured a {
+    background-color: #000;
+    color: #fff;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+#BannerFeatured .description {
+    color: #000;
+    font-size: 20px;
+}
+
+
+@media (max-width: 748px) {  
+
+    #BannerFeatured {
+        background-position: center;
+        background-size: cover;
+        height: 350px;
+      }
+
+    #BannerFeatured .grip-box-banners .title-grip {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #BannerFeatured .description {
+        color: #000;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .center-mb {
+        text-align: center;
+    }
+}
